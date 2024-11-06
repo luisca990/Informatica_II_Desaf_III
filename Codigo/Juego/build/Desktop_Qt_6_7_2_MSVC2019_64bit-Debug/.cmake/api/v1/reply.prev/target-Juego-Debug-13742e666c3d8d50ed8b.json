@@ -75,13 +75,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 70,
+				"line" : 71,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 53,
+				"line" : 54,
 				"parent" : 0
 			},
 			{
@@ -369,7 +369,8 @@
 				0,
 				1,
 				2,
-				7
+				7,
+				13
 			]
 		}
 	],
@@ -488,7 +489,8 @@
 				0,
 				1,
 				2,
-				7
+				7,
+				13
 			]
 		},
 		{
@@ -497,7 +499,7 @@
 			[
 				3,
 				8,
-				10
+				11
 			]
 		},
 		{
@@ -507,7 +509,8 @@
 				4,
 				5,
 				6,
-				11
+				10,
+				12
 			]
 		},
 		{
@@ -521,7 +524,8 @@
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				12
+				14,
+				15
 			]
 		}
 	],
@@ -583,6 +587,11 @@
 			"sourceGroupIndex" : 3
 		},
 		{
+			"backtrace" : 4,
+			"path" : "sprites.qrc",
+			"sourceGroupIndex" : 2
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/include/ui_mainwindow.h",
@@ -596,8 +605,21 @@
 		},
 		{
 			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/EWIEGA46WW/qrc_sprites.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/timestamp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/EWIEGA46WW/qrc_sprites.cpp.rule",
 			"sourceGroupIndex" : 4
 		}
 	],

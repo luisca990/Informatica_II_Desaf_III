@@ -323,7 +323,8 @@
 		"F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsVersionlessTargets.cmake",
 		"F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake",
 		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeParseArguments.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake"
+		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake",
+		"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/sprites.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego",
 	"CROSS_CONFIG" : false,
