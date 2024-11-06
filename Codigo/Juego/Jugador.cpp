@@ -23,11 +23,11 @@ void Jugador::keyPressEvent(QKeyEvent *event){
     case Qt::Key_A:
         movimiento(-5,0);
         confSprite(60);
-        dx=-5;
+        /*dx=-5;
         dy=0;
         if(timerMov->isActive()){
             timerMov->stop();
-        }else{timerMov->start(50);}
+        }else{timerMov->start(50);}*/
         break;
     case Qt::Key_D:
         movimiento(5,0);
@@ -49,7 +49,7 @@ void Jugador::keyPressEvent(QKeyEvent *event){
 void Jugador::movimiento(int dx, int dy){
 
     if (x+60>limites.width()){
-        emit llegarBorde();
+        //emit llegarBorde();
         x = 1;
     }else if (x<1){
         x = 2;
