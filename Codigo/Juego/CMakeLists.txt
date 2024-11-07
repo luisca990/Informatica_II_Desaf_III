@@ -27,6 +27,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         audio.mp3 Jugador.cpp Jugador.h sprites.png
+        sprites.qrc
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Juego APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
