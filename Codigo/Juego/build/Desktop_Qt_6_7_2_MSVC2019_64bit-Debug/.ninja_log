@@ -1,22 +1,75 @@
 # ninja log v6
-118	947	7523965900135745	build.ninja	b936dfb7163f9c09
-30	207	7523950937304236	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/CMakeFiles/cmake.verify_globs	1b4005a0c96f26ef
-262	503	7523949641290044	Juego_autogen/timestamp	3fe56a4044eb921d
-262	503	7523949641290044	Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
-476	3740	7523939616964451	CMakeFiles/Juego.dir/main.cpp.obj	8c8653860b880341
-262	503	7523949641290044	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/timestamp	3fe56a4044eb921d
-504	3724	7523949643717624	CMakeFiles/Juego.dir/mainwindow.cpp.obj	67038ea5746b09d7
-262	503	7523949641290044	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
-533	2447	7523912575073259	CMakeFiles/Juego.dir/Juego_autogen/mocs_compilation.cpp.obj	f0367d493f29a5b8
-3724	4047	7523949675912154	Juego.exe	7e93cf09bcff2b6b
-513	3720	7523949643789780	CMakeFiles/Juego.dir/Jugador.cpp.obj	3a692e07b444991a
-33	218	7523965951787412	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/CMakeFiles/cmake.verify_globs	1b4005a0c96f26ef
-239	444	7523965953953910	Juego_autogen/timestamp	3fe56a4044eb921d
-239	444	7523965953953910	Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
-239	444	7523965953953910	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/timestamp	3fe56a4044eb921d
-239	444	7523965953953910	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
-445	759	7523965958199238	Juego_autogen/EWIEGA46WW/qrc_sprites.cpp	4ef4cc37635c41f8
-445	759	7523965958199238	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/EWIEGA46WW/qrc_sprites.cpp	4ef4cc37635c41f8
-765	1420	7523965959208574	CMakeFiles/Juego.dir/Juego_autogen/EWIEGA46WW/qrc_sprites.cpp.obj	97a3fa2b977f5f6d
-759	2982	7523965959158948	CMakeFiles/Juego.dir/mainwindow.cpp.obj	67038ea5746b09d7
-2983	3239	7523965981386910	Juego.exe	e15d55474eb7ccbf
+197	3123	7536826239323775	build.ninja	b936dfb7163f9c09
+20	181	7536876660766079	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/CMakeFiles/cmake.verify_globs	1b4005a0c96f26ef
+193	315	7536876662499519	Juego_autogen/timestamp	3fe56a4044eb921d
+193	315	7536876662499519	Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
+2148	4580	7530767332417447	CMakeFiles/Juego.dir/main.cpp.obj	8c8653860b880341
+193	315	7536876662499519	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/timestamp	3fe56a4044eb921d
+315	2420	7536876663725300	CMakeFiles/Juego.dir/mainwindow.cpp.obj	67038ea5746b09d7
+193	315	7536876662499519	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
+535	2886	7536872942412449	CMakeFiles/Juego.dir/Juego_autogen/mocs_compilation.cpp.obj	f0367d493f29a5b8
+2420	2620	7536876684774629	Juego.exe	ae1ab53368e08254
+2158	4758	7530767332509458	CMakeFiles/Juego.dir/Jugador.cpp.obj	3a692e07b444991a
+374	752	7536849412084550	Juego_autogen/EWIEGA46WW/qrc_sprites.cpp	4ef4cc37635c41f8
+374	752	7536849412084550	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/EWIEGA46WW/qrc_sprites.cpp	4ef4cc37635c41f8
+765	1537	7536849413088468	CMakeFiles/Juego.dir/Juego_autogen/EWIEGA46WW/qrc_sprites.cpp.obj	97a3fa2b977f5f6d
+320	2417	7536876663766746	CMakeFiles/Juego.dir/Bart.cpp.obj	d67902c22e38ea3e
+25	157	7536882254893937	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/CMakeFiles/cmake.verify_globs	1b4005a0c96f26ef
+166	296	7536882256309691	Juego_autogen/timestamp	3fe56a4044eb921d
+166	296	7536882256309691	Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
+166	296	7536882256309691	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/timestamp	3fe56a4044eb921d
+166	296	7536882256309691	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
+301	2436	7536882257657603	CMakeFiles/Juego.dir/Bart.cpp.obj	d67902c22e38ea3e
+297	2445	7536882257615326	CMakeFiles/Juego.dir/mainwindow.cpp.obj	67038ea5746b09d7
+2445	2682	7536882279100645	Juego.exe	ae1ab53368e08254
+25	139	7536883060271757	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/CMakeFiles/cmake.verify_globs	1b4005a0c96f26ef
+155	284	7536883061572012	Juego_autogen/timestamp	3fe56a4044eb921d
+155	284	7536883061572012	Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
+155	284	7536883061572012	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/timestamp	3fe56a4044eb921d
+155	284	7536883061572012	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
+288	2315	7536883062898592	CMakeFiles/Juego.dir/Bart.cpp.obj	d67902c22e38ea3e
+284	2319	7536883062858582	CMakeFiles/Juego.dir/mainwindow.cpp.obj	67038ea5746b09d7
+2319	2487	7536883083210099	Juego.exe	ae1ab53368e08254
+25	142	7536883447456252	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/CMakeFiles/cmake.verify_globs	1b4005a0c96f26ef
+152	295	7536883448726056	Juego_autogen/timestamp	3fe56a4044eb921d
+152	295	7536883448726056	Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
+152	295	7536883448726056	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/timestamp	3fe56a4044eb921d
+152	295	7536883448726056	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
+300	2294	7536883450204409	CMakeFiles/Juego.dir/Bart.cpp.obj	d67902c22e38ea3e
+296	2301	7536883450164400	CMakeFiles/Juego.dir/mainwindow.cpp.obj	67038ea5746b09d7
+2301	2475	7536883470221534	Juego.exe	ae1ab53368e08254
+18	120	7536886843393801	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/CMakeFiles/cmake.verify_globs	1b4005a0c96f26ef
+12	123	7536886875809718	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/CMakeFiles/cmake.verify_globs	1b4005a0c96f26ef
+14	132	7536888091959514	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/CMakeFiles/cmake.verify_globs	1b4005a0c96f26ef
+141	278	7536888093232628	Juego_autogen/timestamp	3fe56a4044eb921d
+141	278	7536888093232628	Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
+141	278	7536888093232628	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/timestamp	3fe56a4044eb921d
+141	278	7536888093232628	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
+283	2311	7536888094649049	CMakeFiles/Juego.dir/Bart.cpp.obj	d67902c22e38ea3e
+279	2313	7536888094611180	CMakeFiles/Juego.dir/mainwindow.cpp.obj	67038ea5746b09d7
+2313	2487	7536888114946631	Juego.exe	ae1ab53368e08254
+19	138	7536888161895064	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/CMakeFiles/cmake.verify_globs	1b4005a0c96f26ef
+12	132	7536888711633149	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/CMakeFiles/cmake.verify_globs	1b4005a0c96f26ef
+141	279	7536888712922636	Juego_autogen/timestamp	3fe56a4044eb921d
+141	279	7536888712922636	Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
+141	279	7536888712922636	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/timestamp	3fe56a4044eb921d
+141	279	7536888712922636	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
+284	2347	7536888714343058	CMakeFiles/Juego.dir/Bart.cpp.obj	d67902c22e38ea3e
+280	2357	7536888714308314	CMakeFiles/Juego.dir/mainwindow.cpp.obj	67038ea5746b09d7
+2357	2567	7536888735081057	Juego.exe	ae1ab53368e08254
+21	131	7536888901213134	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/CMakeFiles/cmake.verify_globs	1b4005a0c96f26ef
+139	251	7536888902407794	Juego_autogen/timestamp	3fe56a4044eb921d
+139	251	7536888902407794	Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
+139	251	7536888902407794	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/timestamp	3fe56a4044eb921d
+139	251	7536888902407794	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
+255	2310	7536888903563610	CMakeFiles/Juego.dir/Bart.cpp.obj	d67902c22e38ea3e
+251	2318	7536888903523563	CMakeFiles/Juego.dir/mainwindow.cpp.obj	67038ea5746b09d7
+2318	2528	7536888924187000	Juego.exe	ae1ab53368e08254
+21	134	7536889172445217	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/CMakeFiles/cmake.verify_globs	1b4005a0c96f26ef
+143	256	7536889173669879	Juego_autogen/timestamp	3fe56a4044eb921d
+143	256	7536889173669879	Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
+143	256	7536889173669879	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/timestamp	3fe56a4044eb921d
+143	256	7536889173669879	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/mocs_compilation.cpp	3fe56a4044eb921d
+262	2299	7536889174864672	CMakeFiles/Juego.dir/Bart.cpp.obj	d67902c22e38ea3e
+258	2305	7536889174817922	CMakeFiles/Juego.dir/mainwindow.cpp.obj	67038ea5746b09d7
+2305	2507	7536889195288002	Juego.exe	ae1ab53368e08254

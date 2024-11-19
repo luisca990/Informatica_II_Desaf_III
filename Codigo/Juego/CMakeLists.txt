@@ -26,8 +26,12 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Juego
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        audio.mp3 Jugador.cpp Jugador.h sprites.png
+        audio.mp3 Bart.cpp Bart.h sprites.png
         sprites.qrc
+        Bart.png
+        Bart2.png
+
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Juego APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

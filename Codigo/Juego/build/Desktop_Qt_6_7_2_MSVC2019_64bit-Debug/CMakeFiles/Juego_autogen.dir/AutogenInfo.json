@@ -333,9 +333,9 @@
 	"HEADERS" : 
 	[
 		[
-			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/Jugador.h",
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/Bart.h",
 			"MU",
-			"EWIEGA46WW/moc_Jugador.cpp",
+			"EWIEGA46WW/moc_Bart.cpp",
 			null
 		],
 		[
@@ -401,7 +401,7 @@
 	"SOURCES" : 
 	[
 		[
-			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/Jugador.cpp",
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/Bart.cpp",
 			"MU",
 			null
 		],
