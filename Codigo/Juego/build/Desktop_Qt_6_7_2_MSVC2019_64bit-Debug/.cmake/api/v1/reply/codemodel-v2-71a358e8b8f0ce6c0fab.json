@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-dddbe9b766621314c424.json",
+					"jsonFile" : "directory-.-Debug-3aff31ce8c109657dfef.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Juego::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Juego-Debug-13742e666c3d8d50ed8b.json",
+					"jsonFile" : "target-Juego-Debug-e77c0f83011fd2d2d675.json",
 					"name" : "Juego",
 					"projectIndex" : 0
 				},

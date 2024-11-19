@@ -1,4 +1,4 @@
-#include "Jugador.h"
+#include "Bart.h"
 #include <QKeyEvent>
 #include <QDebug>
 
@@ -8,7 +8,7 @@ Jugador::Jugador(QGraphicsView *vista): vista(vista)
     y=200;
     limites = vista->size();
     setFlag(QGraphicsItem::ItemIsFocusable);
-    hojaSprites.load(":/sprites.png");
+    hojaSprites.load(":/Bart2.png");
     sprite = hojaSprites.copy(spriteX,spriteY,spriteAncho,spriteAlto);
     setPixmap(sprite);
     timerMov = new QTimer(this);
@@ -22,24 +22,34 @@ void Jugador::keyPressEvent(QKeyEvent *event){
     switch(event->key()){
     case Qt::Key_A:
         movimiento(-5,0);
-        confSprite(60);
-        /*dx=-5;
+        confSprite(54,8);
+        dx=-5;
         dy=0;
         if(timerMov->isActive()){
             timerMov->stop();
-        }else{timerMov->start(50);}*/
+        }else{timerMov->start(50);}
         break;
     case Qt::Key_D:
         movimiento(5,0);
-        confSprite(120);
+        confSprite(54,8);
+        if(timerMov->isActive()){
+            timerMov->stop();
+        }
+        break;
         break;
     case Qt::Key_W:
         movimiento(0,-5);
-        confSprite(180);
+        confSprite(160,7);
+        if(timerMov->isActive()){
+            timerMov->stop();
+        }
         break;
     case Qt::Key_S:
         movimiento(0,5);
-        confSprite(0);
+        confSprite(110,8);
+        if(timerMov->isActive()){
+            timerMov->stop();
+        }
         break;
     default:
         QGraphicsItem::keyPressEvent(event);
@@ -72,9 +82,9 @@ void Jugador::movimiento(int dx, int dy){
     }
 }
 
-void Jugador::confSprite(int dir){
+void Jugador::confSprite(int dir, int dirX){
     spriteY = dir;
-    spriteX = spriteAncho*cont;
+    spriteX = (spriteAncho*cont)+dirX;
     sprite = hojaSprites.copy(spriteX,spriteY,spriteAncho,spriteAlto);
     setPixmap(sprite);
     cont++;
@@ -84,6 +94,6 @@ void Jugador::confSprite(int dir){
 void Jugador::movContinuo(){
     x+=dx;
     y+=dy;
-    confSprite(60);
+    confSprite(54,8);
     setPos(x,y);
 }

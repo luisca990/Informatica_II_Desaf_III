@@ -75,13 +75,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 71,
+				"line" : 75,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 54,
+				"line" : 58,
 				"parent" : 0
 			},
 			{
@@ -370,7 +370,7 @@
 				1,
 				2,
 				7,
-				13
+				15
 			]
 		}
 	],
@@ -490,7 +490,7 @@
 				1,
 				2,
 				7,
-				13
+				15
 			]
 		},
 		{
@@ -499,7 +499,7 @@
 			[
 				3,
 				8,
-				11
+				13
 			]
 		},
 		{
@@ -510,22 +510,24 @@
 				5,
 				6,
 				10,
-				12
+				14
 			]
 		},
 		{
 			"name" : "Resources",
 			"sourceIndexes" : 
 			[
-				9
+				9,
+				11,
+				12
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				14,
-				15
+				16,
+				17
 			]
 		}
 	],
@@ -573,12 +575,12 @@
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "Jugador.cpp",
+			"path" : "Bart.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 4,
-			"path" : "Jugador.h",
+			"path" : "Bart.h",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -590,6 +592,16 @@
 			"backtrace" : 4,
 			"path" : "sprites.qrc",
 			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "Bart.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"path" : "Bart2.png",
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 0,
