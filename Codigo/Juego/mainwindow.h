@@ -15,6 +15,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+    QPixmap imgFondo;
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 

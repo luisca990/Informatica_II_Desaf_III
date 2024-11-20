@@ -30,6 +30,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         sprites.qrc
         Bart.png
         Bart2.png
+        Fondo.jpg
+        Fondo2.jpg
 
 
     )

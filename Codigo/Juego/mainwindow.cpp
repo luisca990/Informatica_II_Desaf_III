@@ -15,6 +15,9 @@ MainWindow::MainWindow(QWidget *parent)
     qDebug() << "Dimensiones iniciales" <<alto << ancho;
     escena->setSceneRect(0,0,ancho,alto);
     ui->graphicsView->setScene(escena);
+    imgFondo.load(":/Fondo2.jpg");
+    QBrush fondoImagen(imgFondo);
+    ui->graphicsView->setBackgroundBrush(fondoImagen);
     Jugador *jug1 = new Jugador(ui->graphicsView);
     escena -> addItem(jug1);
     jug1->setPos(200,200);
