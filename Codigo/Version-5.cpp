@@ -2,9 +2,10 @@
 #include <vector>
 #include <string>
 #include <memory>
-#include <cstdlib>
+#include <stdexcept>
+#include <ctime>
 
-// Enumeración para los tipos de objetos
+// Enumeración para tipos de objetos
 enum class TipoObjeto {
     Boomerang,
     Rana,
@@ -23,47 +24,44 @@ public:
     virtual std::string obtenerInformacion() = 0;
 };
 
-// Clase Boomerang
 class Boomerang : public Objeto {
 public:
     Boomerang() : Objeto("Boomerang", TipoObjeto::Boomerang) {}
+
     void usar() override {
-        std::cout << "Bart lanza el boomerang.\n";
+        std::cout << "Lanzando boomerang con precisión...\n";
     }
+
     std::string obtenerInformacion() override {
-        return "Un boomerang tradicional australiano.";
+        return "Un boomerang útil en combate.";
     }
 };
 
-// Clase Rana
 class Rana : public Objeto {
 public:
     Rana() : Objeto("Rana", TipoObjeto::Rana) {}
+
     void usar() override {
-        std::cout << "Bart libera la rana.\n";
+        std::cout << "Rana saltando con estilo...\n";
     }
+
     std::string obtenerInformacion() override {
-        return "Una rana que Bart usa para causar caos.";
+        return "Una rana con habilidades saltarinas.";
     }
 };
 
-// Clase Personaje
 class Personaje {
 protected:
     std::string nombre;
     int posicionX, posicionY;
     int vida;
 public:
-    Personaje(const std::string& nombre, int x, int y, int vida) 
+    Personaje(const std::string& nombre, int x, int y, int vida)
         : nombre(nombre), posicionX(x), posicionY(y), vida(vida) {}
     virtual ~Personaje() = default;
 
-    virtual void mover(int dx, int dy) {
-        posicionX += dx;
-        posicionY += dy;
-        std::cout << nombre << " se ha movido a la posición (" << posicionX << ", " << posicionY << ").\n";
-    }
-
+    std::string getNombre() const { return nombre; }
+    int getVida() const { return vida; }
     virtual void recibirDano(int cantidad) {
         vida -= cantidad;
         if (vida < 0) vida = 0;
@@ -71,7 +69,6 @@ public:
     }
 };
 
-// Clase Bart
 class Bart : public Personaje {
 private:
     std::vector<std::unique_ptr<Objeto>> inventario;
@@ -83,11 +80,8 @@ public:
     }
 
     void usarObjeto(size_t index) {
-        if (index < inventario.size()) {
-            inventario[index]->usar();
-        } else {
-            std::cout << "Índice fuera de rango.\n";
-        }
+        if (index >= inventario.size()) throw std::out_of_range("Índice fuera de rango en inventario");
+        inventario[index]->usar();
     }
 
     void mostrarInventario() {
@@ -100,81 +94,102 @@ public:
             }
         }
     }
+};
 
-    void escapar() {
-        std::cout << "Bart intenta escapar.\n";
-    }
+class Enemigo : public Personaje {
+public:
+    Enemigo(const std::string& nombre, int x, int y, int vida)
+        : Personaje(nombre, x, y, vida) {}
 
-    void defender() {
-        std::cout << "Bart se defiende.\n";
+    void atacar(Bart& bart) {
+        std::cout << nombre << " ataca a Bart.\n";
+        bart.recibirDano(10);
     }
 };
 
-// Clase Juego
+class Nivel {
+private:
+    int dificultad;
+    std::vector<Enemigo> enemigos;
+public:
+    Nivel(int dificultad) : dificultad(dificultad) {}
+
+    void cargarNivel() {
+        std::cout << "Cargando nivel con dificultad " << dificultad << ".\n";
+        for (int i = 0; i < dificultad; ++i) {
+            enemigos.emplace_back("Enemigo" + std::to_string(i), 0, 0, 50);
+        }
+    }
+
+    void actualizar(Bart& bart) {
+        for (auto& enemigo : enemigos) {
+            enemigo.atacar(bart);
+        }
+    }
+};
+
 class Juego {
 private:
     Bart bart;
-
+    Nivel nivel;
 public:
-    void iniciarJuego() {
-        std::cout << "Iniciando el juego...\n";
-        // Agregar algunos objetos al inventario de Bart
+    Juego() : nivel(1) {
         bart.agregarObjeto(std::make_unique<Boomerang>());
         bart.agregarObjeto(std::make_unique<Rana>());
+        nivel.cargarNivel();
+    }
+
+    void iniciarJuego() {
+        std::cout << "Iniciando el juego...\n";
+        mostrarMenu();
     }
 
     void mostrarMenu() {
         int opcion = 0;
-        while (opcion != 6) {
-            std::cout << "\n--- Menú de Juego ---\n";
-            std::cout << "1. Mover a Bart\n";
+        bool jugando = true;
+
+        while (jugando) {
+            std::cout << "\n--- Menú Principal ---\n";
+            std::cout << "1. Mostrar inventario\n";
             std::cout << "2. Usar un objeto\n";
-            std::cout << "3. Mostrar inventario\n";
-            std::cout << "4. Escapar\n";
-            std::cout << "5. Defender\n";
-            std::cout << "6. Salir\n";
+            std::cout << "3. Siguiente turno\n";
+            std::cout << "4. Salir del juego\n";
             std::cout << "Seleccione una opción: ";
             std::cin >> opcion;
 
             switch (opcion) {
-                case 1: {
-                    int dx, dy;
-                    std::cout << "Ingrese la distancia a mover en X e Y: ";
-                    std::cin >> dx >> dy;
-                    bart.mover(dx, dy);
-                    break;
-                }
-                case 2: {
+                case 1:
                     bart.mostrarInventario();
-                    std::cout << "Seleccione el índice del objeto a usar: ";
+                    break;
+                case 2: {
                     size_t index;
+                    bart.mostrarInventario();
+                    std::cout << "Seleccione el índice del objeto para usar: ";
                     std::cin >> index;
-                    bart.usarObjeto(index);
+                    try {
+                        bart.usarObjeto(index);
+                    } catch (const std::out_of_range&) {
+                        std::cout << "Índice inválido.\n";
+                    }
                     break;
                 }
                 case 3:
-                    bart.mostrarInventario();
+                    nivel.actualizar(bart);
                     break;
                 case 4:
-                    bart.escapar();
-                    break;
-                case 5:
-                    bart.defender();
-                    break;
-                case 6:
-                    std::cout << "Finalizando el juego...\n";
+                    std::cout << "Saliendo del juego...\n";
+                    jugando = false;
                     break;
                 default:
-                    std::cout << "Opción no válida. Intente de nuevo.\n";
-                    break;
+                    std::cout << "Opción inválida. Inténtelo de nuevo.\n";
             }
         }
     }
 };
 
 int main() {
+    srand(static_cast<unsigned>(time(0)));
     Juego juego;
     juego.iniciarJuego();
-    juego.mostrarMenu();
     return 0;
 }
