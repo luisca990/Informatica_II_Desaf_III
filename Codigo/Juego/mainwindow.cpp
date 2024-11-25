@@ -18,9 +18,9 @@ MainWindow::MainWindow(QWidget *parent)
     imgFondo.load(":/Fondo2.jpg");
     QBrush fondoImagen(imgFondo);
     ui->graphicsView->setBackgroundBrush(fondoImagen);
-    Jugador *jug1 = new Jugador(ui->graphicsView);
+    Bart *jug1 = new Bart(ui->graphicsView);
     escena -> addItem(jug1);
-    jug1->setPos(200,200);
+    jug1->setPos(200,335);
     QGraphicsRectItem *rect1 = new QGraphicsRectItem(0, 0, 50, 50);
     rect1->setBrush(Qt::blue);
     escena->addItem(rect1);
@@ -30,7 +30,7 @@ MainWindow::MainWindow(QWidget *parent)
     escena->addItem(rect2);
 
 
-    connect(jug1, &Jugador::llegarBorde, this, &MainWindow::nuevaEscena);
+    connect(jug1, &Bart::llegarBorde, this, &MainWindow::nuevaEscena);
 
 }
 

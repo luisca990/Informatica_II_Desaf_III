@@ -328,6 +328,7 @@ F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/
 F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/Bart.h
  mmc:Q_OBJECT
  mdp:F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/Bart.h
+ mdp:F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/personaje.h
  mdp:F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/QObject
  mdp:F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/QTimer
  mdp:F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/q20functional.h
@@ -492,4 +493,6 @@ F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/
  mdp:F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/qtwidgetsexports.h
  mdp:F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/qwidget.h
+F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/personaje.h
+F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/personaje.cpp
 F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/Bart.cpp

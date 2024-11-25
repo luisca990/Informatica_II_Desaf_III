@@ -2,10 +2,10 @@
 #include <QKeyEvent>
 #include <QDebug>
 
-Jugador::Jugador(QGraphicsView *vista): vista(vista)
+Bart::Bart(QGraphicsView *vista): vista(vista)
 {
     x=200;
-    y=200;
+    y=335;
     limites = vista->size();
     setFlag(QGraphicsItem::ItemIsFocusable);
     hojaSprites.load(":/Bart2.png");
@@ -17,7 +17,7 @@ Jugador::Jugador(QGraphicsView *vista): vista(vista)
     });
 }
 
-void Jugador::keyPressEvent(QKeyEvent *event){
+void Bart::keyPressEvent(QKeyEvent *event){
 
     switch(event->key()){
     case Qt::Key_A:
@@ -35,7 +35,6 @@ void Jugador::keyPressEvent(QKeyEvent *event){
         if(timerMov->isActive()){
             timerMov->stop();
         }
-        break;
         break;
     case Qt::Key_W:
         movimiento(0,-5);
@@ -56,7 +55,7 @@ void Jugador::keyPressEvent(QKeyEvent *event){
     }
 }
 
-void Jugador::movimiento(int dx, int dy){
+void Bart::movimiento(int dx, int dy){
 
     if (x+60>limites.width()){
         //emit llegarBorde();
@@ -68,7 +67,11 @@ void Jugador::movimiento(int dx, int dy){
         y = limites.height()-60;
     }else if(y<1){
         y = 2;
-    }else{y += dy;}
+    }
+    else if (y + dy < 335) { // Agregamos la limitación superior aquí
+        y = 335;
+    }
+    else{y += dy;}
     setPos(x,y);
     qDebug()<< x << y;
 
@@ -82,7 +85,7 @@ void Jugador::movimiento(int dx, int dy){
     }
 }
 
-void Jugador::confSprite(int dir, int dirX){
+void Bart::confSprite(int dir, int dirX){
     spriteY = dir;
     spriteX = (spriteAncho*cont)+dirX;
     sprite = hojaSprites.copy(spriteX,spriteY,spriteAncho,spriteAlto);
@@ -91,7 +94,7 @@ void Jugador::confSprite(int dir, int dirX){
     if(cont==7){cont=0;}
 }
 
-void Jugador::movContinuo(){
+void Bart::movContinuo(){
     x+=dx;
     y+=dy;
     confSprite(54,8);

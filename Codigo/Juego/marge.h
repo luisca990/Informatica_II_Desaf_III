@@ -1,13 +1,11 @@
-#ifndef BART_H
-#define BART_H
-#include "personaje.h"
-#include <QObject>
-#include <QGraphicsPixmapItem>
-#include <QPixmap>
-#include <QGraphicsView>
-#include <QTimer>
+#ifndef MARGE_H
+#define MARGE_H
 
-class Bart:public QObject, public QGraphicsPixmapItem,public Personaje
+#include "enemigo.h"
+
+#include <qgraphicsitem.h>
+#include <qgraphicsview.h>
+class Marge:public QObject, public QGraphicsPixmapItem,public Enemigo
 {
     Q_OBJECT
 
@@ -27,7 +25,7 @@ private:
     QGraphicsView *vista;
 
 public:
-    Bart(QGraphicsView *vista);
+    Marge(QGraphicsView *vista);
     void keyPressEvent(QKeyEvent *event) override;
     void movimiento(int dx, int dy);
     void confSprite(int dir,int dirX);
@@ -39,5 +37,6 @@ signals:
     void llegarBorde();
 
 };
+};
 
-#endif // BART_H
+#endif // MARGE_H

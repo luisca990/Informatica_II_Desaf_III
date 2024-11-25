@@ -50,8 +50,11 @@ set(OLD_GLOB
   "F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/EWIEGA46WW/qrc_sprites.cpp"
   "F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/mocs_compilation.cpp"
   "F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+  "F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/enemigo.cpp"
   "F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/main.cpp"
   "F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/mainwindow.cpp"
+  "F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/marge.cpp"
+  "F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/personaje.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -73,7 +76,10 @@ set(OLD_GLOB
   "F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/Bart.h"
   "F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/CMakeFiles/ShowIncludes/foo.h"
   "F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/include/ui_mainwindow.h"
+  "F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/enemigo.h"
   "F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/mainwindow.h"
+  "F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/marge.h"
+  "F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/personaje.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
