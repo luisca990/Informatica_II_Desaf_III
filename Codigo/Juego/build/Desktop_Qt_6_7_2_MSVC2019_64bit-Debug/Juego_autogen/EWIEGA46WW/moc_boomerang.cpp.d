@@ -1,5 +1,4 @@
-F:/Luis/Cursos/Ingeniería\ teleco/Tercer\ semes/Informatica\ 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/EWIEGA46WW/moc_Bart.cpp: F:/Luis/Cursos/Ingeniería\ teleco/Tercer\ semes/Informatica\ 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/Bart.h \
-  F:/Luis/Cursos/Ingeniería\ teleco/Tercer\ semes/Informatica\ 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/personaje.h \
+F:/Luis/Cursos/Ingeniería\ teleco/Tercer\ semes/Informatica\ 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/EWIEGA46WW/moc_boomerang.cpp: F:/Luis/Cursos/Ingeniería\ teleco/Tercer\ semes/Informatica\ 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/boomerang.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/QObject \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/QTimer \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/q20functional.h \
@@ -35,7 +34,6 @@ F:/Luis/Cursos/Ingeniería\ teleco/Tercer\ semes/Informatica\ 2/Teoria/Desafio_I
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/qdarwinhelpers.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/qdatastream.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/qdebug.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/qendian.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/qexceptionhandling.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/qflags.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/qfloat16.h \
@@ -121,30 +119,16 @@ F:/Luis/Cursos/Ingeniería\ teleco/Tercer\ semes/Informatica\ 2/Teoria/Desafio_I
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/qversiontagging.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/qxptype_traits.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/qyieldcpu.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/QPixmap \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qaction.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qbitmap.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qbrush.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qcolor.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qcursor.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qfont.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qfontinfo.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qfontmetrics.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qicon.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qimage.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qkeysequence.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qpaintdevice.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qpainter.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qpainterpath.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qpalette.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qpen.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qpixelformat.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qpixmap.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qpolygon.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qregion.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qrgb.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qrgba64.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qtextoption.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qtgui-config.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qtguiexports.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qtguiglobal.h \
@@ -152,15 +136,7 @@ F:/Luis/Cursos/Ingeniería\ teleco/Tercer\ semes/Informatica\ 2/Teoria/Desafio_I
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qwindowdefs.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qwindowdefs_win.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/QGraphicsPixmapItem \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/QGraphicsView \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/qabstractscrollarea.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/qframe.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/qgraphicsitem.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/qgraphicsscene.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/qgraphicsview.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/qscrollarea.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/qsizepolicy.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/qtwidgets-config.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/qtwidgetsexports.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h \
-  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/qwidget.h
+  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h

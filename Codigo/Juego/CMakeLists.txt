@@ -32,6 +32,14 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         Bart2.png
         Fondo.jpg
         Fondo2.jpg
+        Tel1.png Tel2.png Tel3.png
+        personaje.h personaje.cpp
+        enemigo.h enemigo.cpp
+        marge.h marge.cpp
+        Marge.png
+        boomerang.h boomerang.cpp
+        Boomerang.png
+
 
 
     )
