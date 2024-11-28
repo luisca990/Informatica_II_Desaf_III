@@ -339,6 +339,12 @@
 			null
 		],
 		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/boomerang.h",
+			"MU",
+			"EWIEGA46WW/moc_boomerang.cpp",
+			null
+		],
+		[
 			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/enemigo.h",
 			"MU",
 			"EWIEGA46WW/moc_enemigo.cpp",
@@ -420,6 +426,11 @@
 	[
 		[
 			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/Bart.cpp",
+			"MU",
+			null
+		],
+		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/boomerang.cpp",
 			"MU",
 			null
 		],

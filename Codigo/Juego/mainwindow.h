@@ -22,12 +22,14 @@ public:
 
 public slots:
     void nuevaEscena();
+    void spawnObject();
 
 private:
     Ui::MainWindow *ui;
     int alto;
     int ancho;
     QList<QGraphicsRectItem*> itemsBorrar;
+    QTimer* spawnTimer;
 
 };
 

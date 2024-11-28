@@ -37,6 +37,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         enemigo.h enemigo.cpp
         marge.h marge.cpp
         Marge.png
+        boomerang.h boomerang.cpp
+        Boomerang.png
 
 
 

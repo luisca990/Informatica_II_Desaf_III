@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include "Bart.h"
+#include "marge.h"
 #include <QDebug>
 #include <QRandomGenerator>
 
@@ -20,14 +21,19 @@ MainWindow::MainWindow(QWidget *parent)
     ui->graphicsView->setBackgroundBrush(fondoImagen);
     Bart *jug1 = new Bart(ui->graphicsView);
     escena -> addItem(jug1);
-    jug1->setPos(200,335);
-    QGraphicsRectItem *rect1 = new QGraphicsRectItem(0, 0, 50, 50);
+    jug1->setPos(2,476);
+    /*QGraphicsRectItem *rect1 = new QGraphicsRectItem(0, 0, 50, 50);
     rect1->setBrush(Qt::blue);
     escena->addItem(rect1);
 
     QGraphicsRectItem *rect2 = new QGraphicsRectItem(ancho - 50, 0, 50, 50);
     rect2->setBrush(Qt::red);
-    escena->addItem(rect2);
+    escena->addItem(rect2);*/
+
+    // Inicializa el temporizador para generar objetos
+    spawnTimer = new QTimer(this);
+    connect(spawnTimer, &QTimer::timeout, this, &MainWindow::spawnObject);
+    spawnTimer->start(1000); // Genera un objeto cada segundo
 
 
     connect(jug1, &Bart::llegarBorde, this, &MainWindow::nuevaEscena);
@@ -57,6 +63,22 @@ void MainWindow::nuevaEscena(){
         randomRect->setBrush(Qt::green);
         this->ui->graphicsView->scene()->addItem(randomRect);
     }
+
+}
+
+void MainWindow::spawnObject() {
+    // Crea un nuevo objeto en movimiento
+                  // Hace visible el objeto
+
+    auto* marge = new Marge(this);
+
+    // Generar posición inicial (x = 802, y entre 335 y 526)
+    int yPos = QRandomGenerator::global()->bounded(325, 526);
+    int xPos = 802;
+    marge->setPos(xPos, yPos); // Posición inicial
+
+    // Agregar Marge a la escena
+    ui->graphicsView->scene()->addItem(marge);
 
 }
 
