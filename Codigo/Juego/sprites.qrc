@@ -7,5 +7,8 @@
         <file>Fondo2.jpg</file>
         <file>Marge.png</file>
         <file>Boomerang.png</file>
+        <file>Tel1.png</file>
+        <file>Tel2.png</file>
+        <file>Tel3.png</file>
     </qresource>
 </RCC>

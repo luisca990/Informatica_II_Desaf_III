@@ -1,10 +1,11 @@
 #include "Bart.h"
 #include "boomerang.h"
 #include "marge.h"
+#include "telefono.h"
 #include <QKeyEvent>
 #include <QDebug>
 
-Bart::Bart(QGraphicsView *vista): vista(vista)
+Bart::Bart(QGraphicsView *vista): vista(vista),vida(100),delayBetweenBoomerangs(1000)
 {
     x=2;
     y=476;
@@ -13,6 +14,12 @@ Bart::Bart(QGraphicsView *vista): vista(vista)
     hojaSprites.load(":/Bart2.png");
     sprite = hojaSprites.copy(spriteX,spriteY,spriteAncho,spriteAlto);
     setPixmap(sprite);
+
+    barraVida = new QGraphicsRectItem(0, 0, 100, 10); // Ancho 100 px inicial
+    barraVida->setBrush(QBrush(Qt::green));
+    barraVida->setParentItem(this); // La barra sigue a Bart
+    barraVida->setPos(0, -15); // Posición encima de Bart
+
     timerMov = new QTimer(this);
     connect(timerMov, &QTimer::timeout, this, [=]() {
         movContinuo();
@@ -27,6 +34,10 @@ Bart::Bart(QGraphicsView *vista): vista(vista)
     dificultadTimer = new QTimer(this);
     connect(dificultadTimer, &QTimer::timeout, this, &Bart::aumentarDificultad);
     dificultadTimer->start(10000); // Aumenta cada 10 segundos
+
+    // Inicializar el temporizador para el lanzamiento de boomerangs
+    lanzamientoTimer = new QTimer(this);
+    connect(lanzamientoTimer, &QTimer::timeout, this, &Bart::lanzarBoomerang);
 }
 
 /*void Bart::keyPressEvent(QKeyEvent *event){
@@ -85,11 +96,21 @@ void Bart::keyPressEvent(QKeyEvent *event) {
         confSprite(110, 8);
         break;
     case Qt::Key_Space: { // Presiona espacio para lanzar el boomerang
-        QPointF start = pos();        // Posición inicial de Bart
-        qreal angle = 45;             // Ángulo de lanzamiento
-        qreal speed = 50;             // Velocidad de lanzamiento
-        Boomerang* boomerang = new Boomerang(start, angle, speed, this->vista->scene());
-        this->vista->scene()->addItem(boomerang); // Agrega a la escena
+
+
+        // Si el temporizador está activo, no lanzamos un boomerang
+        if (lanzamientoTimer->isActive()) {
+            return;
+        }
+
+        // Lanza el boomerang con parámetros aleatorios
+        lanzarBoomerang();
+
+        // Inicia el temporizador para el siguiente lanzamiento
+        lanzamientoTimer->start(delayBetweenBoomerangs);
+
+        // Incrementa el retraso para el siguiente boomerang
+        delayBetweenBoomerangs += 200; // Incremento acumulativo de 200 ms
         break;
     }
     default:
@@ -103,6 +124,13 @@ void Bart::keyPressEvent(QKeyEvent *event) {
             if (this->collidesWithItem(marge)) {
                 qDebug() << "Colisión detectada con Marge!";
                 // Aquí puedes añadir la lógica adicional en caso de colisión
+                recibirDanio(5);
+            }
+        }
+        else if (Telefono* telefono = dynamic_cast<Telefono*>(item)) {
+            if (this->collidesWithItem(telefono)) {
+                qDebug() << "¡Bart alcanzó el teléfono! ¡Victoria!";
+                // Detener el juego o mostrar un mensaje
             }
         }
     }
@@ -129,16 +157,7 @@ void Bart::movimiento(int dx, int dy){
     qDebug()<< x << y;
 
 
-    for (QGraphicsItem* item : vista->scene()->items()) {
-        // Verifica si el item es un objeto de la clase Marge
-        if (Marge* marge = dynamic_cast<Marge*>(item)) {
-            // Comprueba si hay colisión con el objeto actual
-            if (this->collidesWithItem(marge)) {
-                qDebug() << "Colisión detectada con Marge!";
-                // Aquí puedes añadir la lógica adicional en caso de colisión
-            }
-        }
-    }
+
 }
 
 void Bart::confSprite(int dir, int dirX){
@@ -191,5 +210,50 @@ void Bart::aplicarFriccion() {
 
 void Bart::aumentarDificultad() {
     coefFriccion += 0.005f; // Incrementa la fricción cada 10 segundos
-    qDebug() << "Coeficiente de fricción aumentado a:" << coefFriccion;
+    qDebug() << "Coeficiente de fricción aumentado a: " << coefFriccion;
+}
+
+
+void Bart::recibirDanio(int danio) {
+    vida -= danio;
+    if (vida <= 0) {
+        vida = 0;
+        emit gameOver(); // Emitir señal de Game Over
+    }
+    qDebug() << "Vida de Bart: " <<vida;
+    actualizarBarraVida();
+}
+
+void Bart::actualizarBarraVida() {
+    int ancho = static_cast<int>(vida); // La barra refleja la vida restante
+    barraVida->setRect(0, 0, ancho, 10);
+
+    // Cambiar color según la vida
+    if (vida > 50) {
+        barraVida->setBrush(QBrush(Qt::green));
+    } else if (vida > 20) {
+        barraVida->setBrush(QBrush(Qt::yellow));
+    } else {
+        barraVida->setBrush(QBrush(Qt::red));
+    }
+}
+
+void Bart::lanzarBoomerang() {
+    // Generamos un ángulo y velocidad aleatoria
+    qreal angle = QRandomGenerator::global()->bounded(30, 75); // Ángulo aleatorio entre 30 y 75 grados
+    qreal speed = QRandomGenerator::global()->bounded(40, 60); // Velocidad aleatoria entre 40 y 60 píxeles
+
+    // Posición inicial del boomerang (en la posición de Bart)
+    QPointF start = pos();
+
+    // Crear el boomerang con los parámetros aleatorios
+    Boomerang* boomerang = new Boomerang(start, angle, speed, this->vista->scene());
+    this->vista->scene()->addItem(boomerang);
+
+    // Detener el temporizador después de lanzar el boomerang
+    lanzamientoTimer->stop();
+}
+
+int Bart::getVida() const {
+    return vida;
 }

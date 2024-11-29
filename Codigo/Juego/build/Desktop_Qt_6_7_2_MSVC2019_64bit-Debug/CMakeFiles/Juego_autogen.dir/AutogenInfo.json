@@ -367,6 +367,12 @@
 			"MU",
 			"EWIEGA46WW/moc_personaje.cpp",
 			null
+		],
+		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/telefono.h",
+			"MU",
+			"EWIEGA46WW/moc_telefono.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -456,6 +462,11 @@
 		],
 		[
 			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/personaje.cpp",
+			"MU",
+			null
+		],
+		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/telefono.cpp",
 			"MU",
 			null
 		]

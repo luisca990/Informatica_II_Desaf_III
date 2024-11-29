@@ -3,3 +3,4 @@
 #include "EWIEGA46WW/moc_boomerang.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"
 #include "EWIEGA46WW/moc_marge.cpp"
+#include "EWIEGA46WW/moc_telefono.cpp"

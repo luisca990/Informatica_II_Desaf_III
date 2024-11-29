@@ -12,6 +12,8 @@ class Marge:public QObject,public QGraphicsPixmapItem {
 
 public:
     explicit Marge(QObject* parent = nullptr);
+    void recibirDanio(int danio); // Llamado cuando recibe un golpe del boomerang
+    int getVida() const;
 
 private slots:
     void moveLeft();
@@ -20,9 +22,13 @@ private slots:
 
 private:
     int currentFrame;
+    int randomStepRange; // Rango de variación aleatoria en el movimiento vertical
+    int vida; // Vida de Marge
+    int golpesRecibidos; // Contador de golpes del boomerang
     QPixmap sprite;
     QTimer* timer;
-    int randomStepRange; // Rango de variación aleatoria en el movimiento vertical
+    QGraphicsRectItem* barraVida; // Representa la barra de vida
+    void actualizarBarraVida(); // Actualiza visualmente la barra de vida
 
 };
 
