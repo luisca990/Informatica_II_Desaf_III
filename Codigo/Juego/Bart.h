@@ -18,22 +18,30 @@ private:
     int spriteY = 54;
     int spriteAncho = 24;
     int spriteAlto = 50;
+    int vida; // Vida actual
+    int cont=0;
+    int dx, dy;
+    int delayBetweenBoomerangs; // Retraso acumulativo entre lanzamientos de boomerang
     float velocidadX = 0.0f; // Velocidad horizontal de Bart
     float velocidadY = 0.0f; // Velocidad vertical de Bart
     float coefFriccion = 0.02f; // Coeficiente de fricción inicial
     QPixmap hojaSprites;
     QPixmap sprite;
-    int cont=0;
     QSize limites;
     QTimer *timerMov;
     QTimer* friccionTimer; // Temporizador para aplicar la fricción
     QTimer* dificultadTimer; // Temporizador para aumentar la fricción
-    int dx, dy;
+    QTimer* lanzamientoTimer; // Temporizador para retraso entre lanzamientos de boomerang
     QGraphicsView *vista;
+    QGraphicsRectItem* barraVida; // Representa la barra de vida
+
+
+
 
 private:
     void aplicarFriccion(); // Método para aplicar la fricción
     void aumentarDificultad(); // Método para incrementar la dificultad
+    void actualizarBarraVida(); // Actualiza visualmente la barra de vida
 
 public:
     Bart(QGraphicsView *vista);
@@ -41,12 +49,16 @@ public:
     void extracted();
     void movimiento(int dx, int dy);
     void confSprite(int dir,int dirX);
+    void recibirDanio(int danio); // Llamado cuando hay colisión con Marge
+    int getVida() const; // Obtener la vida actual
+    void lanzarBoomerang();
 
 public slots:
     void movContinuo();
 
 signals:
     void llegarBorde();
+    void gameOver(); // Señal para indicar que el juego terminó
 
 };
 

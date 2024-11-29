@@ -17,6 +17,7 @@ class MainWindow : public QMainWindow
 public:
     QPixmap imgFondo;
     MainWindow(QWidget *parent = nullptr);
+    void mostrarGameOver();
     ~MainWindow();
 
 
@@ -30,6 +31,9 @@ private:
     int ancho;
     QList<QGraphicsRectItem*> itemsBorrar;
     QTimer* spawnTimer;
+
+private:
+    void setupTelefono(); // Declaración de setupJuego
 
 };
 

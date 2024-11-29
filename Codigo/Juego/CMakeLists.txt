@@ -39,6 +39,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         Marge.png
         boomerang.h boomerang.cpp
         Boomerang.png
+        telefono.h telefono.cpp
 
 
 

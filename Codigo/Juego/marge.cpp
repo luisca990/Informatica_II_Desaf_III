@@ -1,5 +1,7 @@
 #include "marge.h"
+#include "boomerang.h"
 #include <qevent.h>
+#include <qgraphicsscene.h>
 #include <qtimer.h>
 
 Marge::Marge(QObject* parent): QObject(parent), QGraphicsPixmapItem() {
@@ -22,6 +24,12 @@ Marge::Marge(QObject* parent): QObject(parent), QGraphicsPixmapItem() {
     connect(timer, &QTimer::timeout, this, &Marge::updateFrame);
     connect(timer, &QTimer::timeout, this, &Marge::moveLeft);
     timer->start(100); // Controla la velocidad de la animación (100 ms por cuadro)
+
+    // Barra de vida
+    barraVida = new QGraphicsRectItem(0, 0, 50, 5); // Ancho inicial 50 px
+    barraVida->setBrush(QBrush(Qt::blue));
+    barraVida->setParentItem(this); // La barra sigue a Marge
+    barraVida->setPos(0, -10); // Posición encima de Marge
 }
 
 /*void Marge::moveLeft() {
@@ -69,6 +77,19 @@ void Marge::moveLeft() {
     if (randomStepRange < 50) { // Límite máximo del rango de variación
         randomStepRange += 1; // Aumenta la dificultad progresivamente
     }
+
+    // Revisar los items en la escena para detectar colisiones con Boomerang
+    for (QGraphicsItem* item : scene()->items()) {
+        if (Boomerang* boomerang = dynamic_cast<Boomerang*>(item)) {
+            // Verifica si hay colisión con el boomerang
+            if (this->collidesWithItem(boomerang)) {
+                qDebug() << "Colisión detectada con Boomerang!";
+                // Llamar a la función recibirDanio al recibir el daño del boomerang
+                recibirDanio(5); // Puedes ajustar el daño aquí
+                return; // Salir de la función si la colisión fue detectada
+            }
+        }
+    }
 }
 
 
@@ -86,4 +107,36 @@ void Marge::updateFrame() {
 
     // Corta y muestra el cuadro actual
     setPixmap(sprite.copy(xOffset, yOffset, frameWidth, frameHeight));
+}
+
+
+void Marge::recibirDanio(int danio) {
+    golpesRecibidos++;
+    if (golpesRecibidos % 3 == 0) { // Cada 3 golpes, reducir vida
+        vida -= danio;
+        if (vida <= 0) {
+            vida = 0;
+            scene()->removeItem(this); // Eliminar Marge de la escena
+            delete this; // Liberar memoria
+        }else
+        actualizarBarraVida();
+    }
+}
+
+void Marge::actualizarBarraVida() {
+    int ancho = static_cast<int>((vida / 50.0) * 50); // Escala proporcional a 50
+    barraVida->setRect(0, 0, ancho, 5);
+
+    // Cambiar color según la vida
+    if (vida > 25) {
+        barraVida->setBrush(QBrush(Qt::blue));
+        //timer->setInterval(timer->interval()-10);
+    } else {
+        barraVida->setBrush(QBrush(Qt::red));
+        //timer->setInterval(timer->interval()-5);
+    }
+}
+
+int Marge::getVida() const {
+    return vida;
 }

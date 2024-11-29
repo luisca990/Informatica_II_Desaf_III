@@ -2,6 +2,7 @@
 #include "./ui_mainwindow.h"
 #include "Bart.h"
 #include "marge.h"
+#include "telefono.h"
 #include <QDebug>
 #include <QRandomGenerator>
 
@@ -19,9 +20,9 @@ MainWindow::MainWindow(QWidget *parent)
     imgFondo.load(":/Fondo2.jpg");
     QBrush fondoImagen(imgFondo);
     ui->graphicsView->setBackgroundBrush(fondoImagen);
-    Bart *jug1 = new Bart(ui->graphicsView);
-    escena -> addItem(jug1);
-    jug1->setPos(2,476);
+    Bart *bart = new Bart(ui->graphicsView);
+    escena -> addItem(bart);
+    bart->setPos(2,476);
     /*QGraphicsRectItem *rect1 = new QGraphicsRectItem(0, 0, 50, 50);
     rect1->setBrush(Qt::blue);
     escena->addItem(rect1);
@@ -31,13 +32,17 @@ MainWindow::MainWindow(QWidget *parent)
     escena->addItem(rect2);*/
 
     // Inicializa el temporizador para generar objetos
+    // Posición inicial del teléfono
+
     spawnTimer = new QTimer(this);
     connect(spawnTimer, &QTimer::timeout, this, &MainWindow::spawnObject);
     spawnTimer->start(1000); // Genera un objeto cada segundo
 
 
-    connect(jug1, &Bart::llegarBorde, this, &MainWindow::nuevaEscena);
+    connect(bart, &Bart::llegarBorde, this, &MainWindow::nuevaEscena);
+    connect(bart, &Bart::gameOver, this, &MainWindow::mostrarGameOver);
 
+    setupTelefono();
 }
 
 void MainWindow::nuevaEscena(){
@@ -80,6 +85,26 @@ void MainWindow::spawnObject() {
     // Agregar Marge a la escena
     ui->graphicsView->scene()->addItem(marge);
 
+}
+
+
+void MainWindow::setupTelefono() {
+    // Posición inicial del teléfono
+    QPointF posicionTelefono(800, 450); // Cambia la posición según tu escena
+    Telefono* telefono = new Telefono(posicionTelefono);
+    ui->graphicsView->scene()->addItem(telefono);
+}
+
+void MainWindow::mostrarGameOver() {
+    // Cambiar a una nueva escena de Game Over
+    QGraphicsScene* gameOverScene = new QGraphicsScene(this);
+    gameOverScene->setSceneRect(0, 0, ui->graphicsView->width(), ui->graphicsView->height());
+    QGraphicsTextItem* texto = new QGraphicsTextItem("¡Game Over!");
+    texto->setDefaultTextColor(Qt::red);
+    texto->setFont(QFont("Arial", 30));
+    texto->setPos(ui->graphicsView->width() / 2 - 100, ui->graphicsView->height() / 2 - 50);
+    gameOverScene->addItem(texto);
+    ui->graphicsView->setScene(gameOverScene);
 }
 
 MainWindow::~MainWindow()
