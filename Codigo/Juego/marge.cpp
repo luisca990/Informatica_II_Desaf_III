@@ -4,7 +4,7 @@
 #include <qgraphicsscene.h>
 #include <qtimer.h>
 
-Marge::Marge(QObject* parent): QObject(parent), QGraphicsPixmapItem() {
+Marge::Marge(QObject* parent):Enemigo(parent) {
     sprite = QPixmap(":/Marge.png"); // Carga el sprite completo
 
     // Dimensiones de cada cuadro en el sprite
@@ -22,7 +22,7 @@ Marge::Marge(QObject* parent): QObject(parent), QGraphicsPixmapItem() {
 
     // Conecta el temporizador para animación y movimiento
     connect(timer, &QTimer::timeout, this, &Marge::updateFrame);
-    connect(timer, &QTimer::timeout, this, &Marge::moveLeft);
+    //connect(timer, &QTimer::timeout, this, &Marge::moveLeft);
     timer->start(100); // Controla la velocidad de la animación (100 ms por cuadro)
 
     // Barra de vida
@@ -48,7 +48,7 @@ Marge::Marge(QObject* parent): QObject(parent), QGraphicsPixmapItem() {
     // Actualiza la posición del objeto, manteniendo la posición Y fija
 
 }*/
-void Marge::moveLeft() {
+void Marge::mover() {
     // Mueve el objeto hacia la izquierda
     int newX = x() - 5; // Decrementa la posición en x
 

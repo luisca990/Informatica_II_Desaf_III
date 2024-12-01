@@ -22,17 +22,9 @@ MainWindow::MainWindow(QWidget *parent)
     ui->graphicsView->setBackgroundBrush(fondoImagen);
     Bart *bart = new Bart(ui->graphicsView);
     escena -> addItem(bart);
+    bart->setFocus();
     bart->setPos(2,476);
-    /*QGraphicsRectItem *rect1 = new QGraphicsRectItem(0, 0, 50, 50);
-    rect1->setBrush(Qt::blue);
-    escena->addItem(rect1);
 
-    QGraphicsRectItem *rect2 = new QGraphicsRectItem(ancho - 50, 0, 50, 50);
-    rect2->setBrush(Qt::red);
-    escena->addItem(rect2);*/
-
-    // Inicializa el temporizador para generar objetos
-    // Posición inicial del teléfono
 
     spawnTimer = new QTimer(this);
     connect(spawnTimer, &QTimer::timeout, this, &MainWindow::spawnObject);
@@ -41,6 +33,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     connect(bart, &Bart::llegarBorde, this, &MainWindow::nuevaEscena);
     connect(bart, &Bart::gameOver, this, &MainWindow::mostrarGameOver);
+    connect(bart, &Bart::victoria, this, &MainWindow::mostrarVictoria);
 
     setupTelefono();
 }
@@ -101,12 +94,36 @@ void MainWindow::mostrarGameOver() {
     gameOverScene->setSceneRect(0, 0, ui->graphicsView->width(), ui->graphicsView->height());
     QGraphicsTextItem* texto = new QGraphicsTextItem("¡Game Over!");
     texto->setDefaultTextColor(Qt::red);
-    texto->setFont(QFont("Arial", 30));
+    texto->setFont(QFont("Arial",40,true));
     texto->setPos(ui->graphicsView->width() / 2 - 100, ui->graphicsView->height() / 2 - 50);
     gameOverScene->addItem(texto);
     ui->graphicsView->setScene(gameOverScene);
+    QPixmap imgFondo3;
+    imgFondo3.load(":/FondoGameOver.jpg");
+    imgFondo3 = imgFondo3.scaled(ui->graphicsView->size(), Qt::IgnoreAspectRatio);
+    QBrush fondoImagenVic(imgFondo3);
+    ui->graphicsView->setBackgroundBrush(fondoImagenVic);
+    spawnTimer->stop();
 }
 
+void MainWindow::mostrarVictoria() {
+    // Cambiar a una nueva escena de Game Over
+    QGraphicsScene* victoriaScene = new QGraphicsScene(this);
+    victoriaScene->setSceneRect(0, 0, ui->graphicsView->width(), ui->graphicsView->height());
+    QGraphicsTextItem* texto = new QGraphicsTextItem("¡Ganaste!");
+    texto->setDefaultTextColor(Qt::yellow);
+    texto->setFont(QFont("Arial", 30));
+    texto->setPos(ui->graphicsView->width() / 2 - 100, ui->graphicsView->height() / 2 - 50);
+    victoriaScene->addItem(texto);
+    ui->graphicsView->setScene(victoriaScene);
+    QPixmap imgFondo2;
+    imgFondo2.load(":/fondovictoria.jpg");
+    imgFondo2 = imgFondo2.scaled(ui->graphicsView->size(), Qt::IgnoreAspectRatio);
+    QBrush fondoImagenVic(imgFondo2);
+    ui->graphicsView->setBackgroundBrush(fondoImagenVic);
+    spawnTimer->stop();
+
+}
 MainWindow::~MainWindow()
 {
     delete ui;

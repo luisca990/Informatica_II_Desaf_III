@@ -18,6 +18,7 @@ public:
     QPixmap imgFondo;
     MainWindow(QWidget *parent = nullptr);
     void mostrarGameOver();
+    void mostrarVictoria();
     ~MainWindow();
 
 
