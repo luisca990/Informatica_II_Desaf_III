@@ -1,12 +1,19 @@
 #include "telefono.h"
+#include "GameException.h"
 
 Telefono::Telefono(QPointF posicionInicial, QObject *parent)
     : QObject(parent), QGraphicsPixmapItem(), spriteActual(0)
 {
     // Cargar las imágenes
-    imagen1 = QPixmap(":/Tel2.png");
-    imagen2 = QPixmap(":/Tel2.png");
-    imagen3 = QPixmap(":/Tel3.png");
+    try {
+        // Simula la carga de recursos
+        imagen1 = QPixmap(":/Tel2.png");
+        imagen2 = QPixmap(":/Tel2.png");
+        imagen3 = QPixmap(":/Tel3.png");
+    } catch (const GameException& e) {
+        qDebug()<< e.what() << "\n";
+    }
+
 
     // Verificar si las imágenes se cargaron correctamente
     if (imagen1.isNull() || imagen2.isNull() || imagen3.isNull()) {

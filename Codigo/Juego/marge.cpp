@@ -1,11 +1,17 @@
 #include "marge.h"
+#include "GameException.h"
 #include "boomerang.h"
 #include <qevent.h>
 #include <qgraphicsscene.h>
 #include <qtimer.h>
 
 Marge::Marge(QObject* parent):Enemigo(parent) {
-    sprite = QPixmap(":/Marge.png"); // Carga el sprite completo
+    try {
+        // Simula la carga de recursos
+        sprite = QPixmap(":/Marge.png"); // Carga el sprite completo
+    } catch (const GameException& e) {
+        qDebug()<< e.what() << "\n";
+    }
 
     // Dimensiones de cada cuadro en el sprite
     int frameWidth = 45;   // Ancho de cada cuadro

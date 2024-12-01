@@ -260,21 +260,29 @@ int Bart::getVida() const {
 */
 
 #include "bart.h"
+#include "GameException.h"
 #include "boomerang.h"
 #include "marge.h"
 #include "telefono.h"
+#include "archivo.h"
 #include <QGraphicsScene>
 #include <QRandomGenerator>
 #include <QDebug>
 
 Bart::Bart(QGraphicsView* vista)
-    : Personaje(vista), spriteX(8), spriteY(54), spriteAncho(24), spriteAlto(50), cont(0), delayBetweenBoomerangs(1000), danoBase(1),multiplicadorDano(0.001f) {
+    : Personaje(vista), spriteX(8), spriteY(54), spriteAncho(24), spriteAlto(50), cont(0), delayBetweenBoomerangs(1000), danoBase(1),multiplicadorDano(0.001f),cantidadBomerang(0),nombreArchivo("InformacionJuego.txt") {
     x = 2;
     y = 476;
     limites = vista->size();
 
     // Cargar hoja de sprites
-    hojaSprites.load(":/Bart2.png");
+    try {
+        // Simula la carga de recursos
+        hojaSprites.load(":/Bart2.png");
+    } catch (const GameException& e) {
+        qDebug()<< e.what() << "\n";
+    }
+
     sprite = hojaSprites.copy(spriteX, spriteY, spriteAncho, spriteAlto);
     setPixmap(sprite);
     setFlag(QGraphicsItem::ItemIsFocusable); // Permite que Bart reciba eventos de teclado
@@ -318,6 +326,7 @@ void Bart::keyPressEvent(QKeyEvent* event) {
     case Qt::Key_Space:
         if (!lanzamientoTimer->isActive()) {
             lanzarBoomerang();
+            cantidadBomerang++;
             lanzamientoTimer->start(delayBetweenBoomerangs);
             delayBetweenBoomerangs += 200;
         }
@@ -414,7 +423,10 @@ void Bart::detectarColisiones(){
             if (this->collidesWithItem(telefono)) {
                 qDebug() << "¡Bart alcanzó el teléfono! ¡Victoria!";
                 // Detener el juego o mostrar un mensaje
+                archivo.guardarVida(vida,nombreArchivo);
+                archivo.guardarBoomerangLanzados(cantidadBomerang,nombreArchivo);
                 emit victoria();
+
             }
         }
     }

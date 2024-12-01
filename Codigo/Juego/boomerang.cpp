@@ -1,4 +1,5 @@
 #include "boomerang.h"
+#include "GameException.h"
 #include <QtMath>
 #include <QDebug>
 
@@ -7,8 +8,14 @@ Boomerang::Boomerang(QPointF start, qreal angle, qreal speed, QObject* parent)
     speed(speed), time(0), gravity(9.8), returnFactor(0.01),
     currentFrame(0), frameWidth(17), frameHeight(30) { // Asume que cada cuadro mide 45x45
 
-    // Carga el sprite
-    spriteSheet = QPixmap(":/Boomerang.png"); // Cambia esto al path del sprite
+    try {
+        // Carga el sprite
+        spriteSheet = QPixmap(":/Boomerang.png"); // Cambia esto al path del sprite
+    } catch (const GameException& e) {
+        qDebug()<< e.what() << "\n";
+    }
+
+
     setupSprite();
 
     setPos(startPos); // Posición inicial

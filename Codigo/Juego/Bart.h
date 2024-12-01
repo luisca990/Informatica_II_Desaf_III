@@ -68,6 +68,7 @@ signals:
 #ifndef BART_H
 #define BART_H
 
+#include "archivo.h"
 #include "personaje.h"
 #include <QTimer>
 #include <QPixmap>
@@ -93,6 +94,7 @@ signals:
     void victoria();
 
 private:
+    Archivo archivo;
     QPixmap hojaSprites;
     QPixmap sprite;
     QSize limites;
@@ -104,7 +106,9 @@ private:
     int xSprite;
     int ySprite;
     int danoBase;          // Daño base que Bart recibe
+    int cantidadBomerang;
     float multiplicadorDano; // Factor que aumenta con el tiempo
+    std::string nombreArchivo;
 
     QTimer* aumentoDanoTimer; // Temporizador para aumentar el daño
     QTimer* lanzamientoTimer;      // Temporizador para lanzar boomerangs

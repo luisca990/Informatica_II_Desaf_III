@@ -1,7 +1,7 @@
 #include "personaje.h"
 
 Personaje::Personaje(QGraphicsView* vista, QObject* parent)
-    : QObject(parent), vista(vista), vida(100), velocidadX(0), velocidadY(0), coefFriccion(0.02f) {
+    : QObject(parent), vista(vista), vida(100), velocidadX(0), velocidadY(0), coefFriccion(0.02f),nombreArchivo("InformacionJuego.txt") {
     // Inicializar posición
     x = 0;
     y = 0;
@@ -24,6 +24,7 @@ void Personaje::recibirDanio(int danio,float multiplicadorDano) {
     vida -= danoFinal;
     if (vida <= 0) {
         vida = 0;
+        archivo.guardarVida(vida,nombreArchivo);
         emit gameOver(); // Emitir señal de Game Over
     }
     qDebug() << "Vida de Bart: " << vida << "Daño recibido: " << danoFinal;
