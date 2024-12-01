@@ -9,62 +9,9 @@
 	[
 		"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/CMakeLists.txt",
 		"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeSystem.cmake.in",
 		"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeNinjaFindMake.cmake",
 		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake",
 		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-Determine-CXX.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCompilerIdDetection.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/ADSP-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/ARMCC-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/ARMClang-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/AppleClang-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Clang-DetermineCompilerInternal.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Borland-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Clang-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Clang-DetermineCompilerInternal.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Cray-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/CrayClang-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Embarcadero-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Fujitsu-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/GHS-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/HP-CXX-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/IAR-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Intel-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/MSVC-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/NVHPC-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/NVIDIA-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/OrangeC-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/PGI-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/PathScale-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/SCO-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/TI-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/TIClang-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Tasking-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Watcom-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/XL-CXX-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeFindBinUtils.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/GNU-FindBinUtils.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCXXCompiler.cmake.in",
 		"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake",
 		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake",
 		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake",
@@ -78,27 +25,11 @@
 		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
 		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake",
 		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineRCCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeRCCompiler.cmake.in",
 		"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeRCCompiler.cmake",
 		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeRCInformation.cmake",
 		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeTestRCCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeTestCompilerCommon.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeParseImplicitIncludeInfo.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeParseImplicitLinkInfo.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeParseLibraryArchitecture.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeTestCompilerCommon.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineCompileFeatures.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Internal/FeatureTesting.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCXXCompiler.cmake.in",
-		"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake",
 		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
+		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake",
 		"F:/instalaciones/QT_Creator/6.7.2/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"F:/instalaciones/QT_Creator/6.7.2/mingw_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"F:/instalaciones/QT_Creator/6.7.2/mingw_64/lib/cmake/Qt6/Qt6Config.cmake",
@@ -368,7 +299,8 @@
 		"F:/instalaciones/QT_Creator/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsVersionlessTargets.cmake",
 		"F:/instalaciones/QT_Creator/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake",
 		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/CMakeParseArguments.cmake",
-		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake"
+		"F:/instalaciones/QT_Creator/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake",
+		"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/sprites.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego",
 	"CROSS_CONFIG" : false,
@@ -377,9 +309,57 @@
 	"HEADERS" : 
 	[
 		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/Bart.h",
+			"MU",
+			"EWIEGA46WW/moc_Bart.cpp",
+			null
+		],
+		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/archivo.h",
+			"MU",
+			"EWIEGA46WW/moc_archivo.cpp",
+			null
+		],
+		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/boomerang.h",
+			"MU",
+			"EWIEGA46WW/moc_boomerang.cpp",
+			null
+		],
+		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/enemigo.h",
+			"MU",
+			"EWIEGA46WW/moc_enemigo.cpp",
+			null
+		],
+		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/gameexception.h",
+			"MU",
+			"EWIEGA46WW/moc_gameexception.cpp",
+			null
+		],
+		[
 			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/marge.h",
+			"MU",
+			"EWIEGA46WW/moc_marge.cpp",
+			null
+		],
+		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/personaje.h",
+			"MU",
+			"EWIEGA46WW/moc_personaje.cpp",
+			null
+		],
+		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/telefono.h",
+			"MU",
+			"EWIEGA46WW/moc_telefono.cpp",
 			null
 		]
 	],
@@ -455,12 +435,52 @@
 	"SOURCES" : 
 	[
 		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/Bart.cpp",
+			"MU",
+			null
+		],
+		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/archivo.cpp",
+			"MU",
+			null
+		],
+		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/boomerang.cpp",
+			"MU",
+			null
+		],
+		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/enemigo.cpp",
+			"MU",
+			null
+		],
+		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/gameexception.cpp",
+			"MU",
+			null
+		],
+		[
 			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/main.cpp",
 			"MU",
 			null
 		],
 		[
 			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/marge.cpp",
+			"MU",
+			null
+		],
+		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/personaje.cpp",
+			"MU",
+			null
+		],
+		[
+			"F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/telefono.cpp",
 			"MU",
 			null
 		]
