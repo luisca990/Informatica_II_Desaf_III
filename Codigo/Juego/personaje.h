@@ -1,6 +1,7 @@
 #ifndef PERSONAJE_H
 #define PERSONAJE_H
 
+#include "archivo.h"
 #include <QObject>
 #include <QGraphicsPixmapItem>
 #include <QGraphicsView>
@@ -24,12 +25,14 @@ signals:
     void gameOver();      // Señal que se emite cuando la vida llega a 0
 
 protected:
+    Archivo archivo;
     QGraphicsView* vista; // Vista asociada al personaje
     int vida;             // Vida del personaje
     qreal x, y;           // Posición en la escena
     float velocidadX;     // Velocidad en el eje X
     float velocidadY;     // Velocidad en el eje Y
     float coefFriccion;   // Coeficiente de fricción
+    std::string nombreArchivo;
 
     QGraphicsRectItem* barraVida; // Representa visualmente la vida del personaje
 

@@ -1,4 +1,5 @@
 F:/Luis/Cursos/Ingeniería\ teleco/Tercer\ semes/Informatica\ 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/EWIEGA46WW/moc_personaje.cpp: F:/Luis/Cursos/Ingeniería\ teleco/Tercer\ semes/Informatica\ 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/personaje.h \
+  F:/Luis/Cursos/Ingeniería\ teleco/Tercer\ semes/Informatica\ 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/archivo.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/QList \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/QObject \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/QRect \

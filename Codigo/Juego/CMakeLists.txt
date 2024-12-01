@@ -42,6 +42,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         telefono.h telefono.cpp
         fondovictoria.jpg
         FondoGameOver.jpg
+        gameexception.h gameexception.cpp
+        archivo.cpp archivo.h
 
 
 
