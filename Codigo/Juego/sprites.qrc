@@ -10,5 +10,7 @@
         <file>Tel1.png</file>
         <file>Tel2.png</file>
         <file>Tel3.png</file>
+        <file>fondovictoria.jpg</file>
+        <file>FondoGameOver.jpg</file>
     </qresource>
 </RCC>

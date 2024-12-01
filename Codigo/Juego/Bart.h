@@ -1,4 +1,4 @@
-#ifndef BART_H
+/*#ifndef BART_H
 #define BART_H
 #include "personaje.h"
 #include <QObject>
@@ -60,6 +60,57 @@ signals:
     void llegarBorde();
     void gameOver(); // Señal para indicar que el juego terminó
 
+};
+
+#endif // BART_H
+*/
+
+#ifndef BART_H
+#define BART_H
+
+#include "personaje.h"
+#include <QTimer>
+#include <QPixmap>
+#include <QObject>
+
+class Bart : public Personaje {
+    Q_OBJECT
+
+public:
+    Bart(QGraphicsView* vista);
+
+    void keyPressEvent(QKeyEvent* event) override;
+    void keyReleaseEvent(QKeyEvent* event) override;
+    void aplicarFriccion() override;
+    void lanzarBoomerang();
+    void confSprite(int dir, int dirX);
+    void aumentarDificultad();
+    void detectarColisiones();
+    void aumentarDano(); // Método para aumentar el daño
+
+signals:
+    void llegarBorde(); // Señal que se emite cuando Bart alcanza los bordes
+    void victoria();
+
+private:
+    QPixmap hojaSprites;
+    QPixmap sprite;
+    QSize limites;
+    int spriteX;
+    int spriteY;
+    int spriteAncho;
+    int spriteAlto;
+    int cont;
+    int xSprite;
+    int ySprite;
+    int danoBase;          // Daño base que Bart recibe
+    float multiplicadorDano; // Factor que aumenta con el tiempo
+
+    QTimer* aumentoDanoTimer; // Temporizador para aumentar el daño
+    QTimer* lanzamientoTimer;      // Temporizador para lanzar boomerangs
+    QTimer* friccionTimer;
+    QTimer* dificultadTimer;
+    int delayBetweenBoomerangs;    // Retraso acumulativo entre lanzamientos
 };
 
 #endif // BART_H

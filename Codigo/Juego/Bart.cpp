@@ -1,4 +1,4 @@
-#include "Bart.h"
+/*#include "Bart.h"
 #include "boomerang.h"
 #include "marge.h"
 #include "telefono.h"
@@ -76,7 +76,7 @@ Bart::Bart(QGraphicsView *vista): vista(vista),vida(100),delayBetweenBoomerangs(
     default:
         QGraphicsItem::keyPressEvent(event);
     }
-}*/
+}//
 void Bart::keyPressEvent(QKeyEvent *event) {
     switch(event->key()) {
     case Qt::Key_A:
@@ -256,4 +256,181 @@ void Bart::lanzarBoomerang() {
 
 int Bart::getVida() const {
     return vida;
+}
+*/
+
+#include "bart.h"
+#include "boomerang.h"
+#include "marge.h"
+#include "telefono.h"
+#include <QGraphicsScene>
+#include <QRandomGenerator>
+#include <QDebug>
+
+Bart::Bart(QGraphicsView* vista)
+    : Personaje(vista), spriteX(8), spriteY(54), spriteAncho(24), spriteAlto(50), cont(0), delayBetweenBoomerangs(1000), danoBase(1),multiplicadorDano(0.001f) {
+    x = 2;
+    y = 476;
+    limites = vista->size();
+
+    // Cargar hoja de sprites
+    hojaSprites.load(":/Bart2.png");
+    sprite = hojaSprites.copy(spriteX, spriteY, spriteAncho, spriteAlto);
+    setPixmap(sprite);
+    setFlag(QGraphicsItem::ItemIsFocusable); // Permite que Bart reciba eventos de teclado
+    setFocus();
+
+    // Inicializar temporizador para boomerangs
+    lanzamientoTimer = new QTimer(this);
+    connect(lanzamientoTimer, &QTimer::timeout, this, &Bart::lanzarBoomerang);
+    // Configurar temporizador de fricción
+    friccionTimer = new QTimer(this);
+    connect(friccionTimer, &QTimer::timeout, this, &Bart::aplicarFriccion);
+    friccionTimer->start(50); // Ajusta la frecuencia según sea necesario (50 ms recomendado)
+    // Temporizador para aumentar la dificultad
+    dificultadTimer = new QTimer(this);
+    connect(dificultadTimer, &QTimer::timeout, this, &Bart::aumentarDificultad);
+    dificultadTimer->start(10000); // Aumenta cada 10 segundos
+
+    aumentoDanoTimer = new QTimer(this);
+    connect(aumentoDanoTimer, &QTimer::timeout, this, &Bart::aumentarDano);
+    aumentoDanoTimer->start(10000); // Se ejecuta cada 10 segundos
+}
+
+void Bart::keyPressEvent(QKeyEvent* event) {
+    switch (event->key()) {
+    case Qt::Key_A:
+        velocidadX = -5;
+        confSprite(54, 8);
+        break;
+    case Qt::Key_D:
+        velocidadX = 5;
+        confSprite(54, 8);
+        break;
+    case Qt::Key_W:
+        velocidadY = -5;
+        confSprite(160, 7);
+        break;
+    case Qt::Key_S:
+        velocidadY = 5;
+        confSprite(110, 8);
+        break;
+    case Qt::Key_Space:
+        if (!lanzamientoTimer->isActive()) {
+            lanzarBoomerang();
+            lanzamientoTimer->start(delayBetweenBoomerangs);
+            delayBetweenBoomerangs += 200;
+        }
+        break;
+    default:
+        QGraphicsItem::keyPressEvent(event);
+    }
+    detectarColisiones();
+
+    if (x < 2 || x > vista->width() - 60) emit llegarBorde();
+    // Inicia el temporizador de fricción si no está activo
+    if (!friccionTimer->isActive()) {
+        friccionTimer->start(50);
+    }
+
+
+}
+
+void Bart::aplicarFriccion() {
+    // Reducir velocidad en X
+    if (velocidadX > 0) {
+        velocidadX -= coefFriccion;
+        if (velocidadX < 0) velocidadX = 0; // Evitar valores negativos
+    } else if (velocidadX < 0) {
+        velocidadX += coefFriccion;
+        if (velocidadX > 0) velocidadX = 0;
+    }
+
+    // Reducir velocidad en Y
+    if (velocidadY > 0) {
+        velocidadY -= coefFriccion;
+        if (velocidadY < 0) velocidadY = 0;
+    } else if (velocidadY < 0) {
+        velocidadY += coefFriccion;
+        if (velocidadY > 0) velocidadY = 0;
+    }
+
+    // Actualizar posición
+    x += velocidadX;
+    y += velocidadY;
+
+    // Limitar posición dentro de los bordes
+    if (x < 2) x = 2;
+    if (x > limites.width() - 60) x = limites.width() - 60;
+    if (y < 380) y = 380;
+    if (y > 526) y = 526;
+
+    // Mover a Bart
+    setPos(x, y);
+
+
+
+    // Detener el temporizador si la velocidad es cero
+
+}
+
+
+void Bart::lanzarBoomerang() {
+    qreal angle = QRandomGenerator::global()->bounded(30, 75);
+    qreal speed = QRandomGenerator::global()->bounded(40, 60);
+
+    QPointF start = pos();
+    Boomerang* boomerang = new Boomerang(start, angle, speed, this->scene());
+    scene()->addItem(boomerang);
+
+    lanzamientoTimer->stop();
+}
+
+void Bart::confSprite(int dir, int dirX) {
+    spriteY = dir;
+    spriteX = (spriteAncho * cont) + dirX;
+    sprite = hojaSprites.copy(spriteX, spriteY, spriteAncho, spriteAlto);
+    setPixmap(sprite);
+    cont = (cont + 1) % 7;
+}
+void Bart::aumentarDificultad() {
+    coefFriccion += 0.005f; // Incrementa la fricción cada 10 segundos
+    qDebug() << "Coeficiente de fricción aumentado a: " << coefFriccion;
+}
+
+
+void Bart::detectarColisiones(){
+    for (QGraphicsItem* item : vista->scene()->items()) {
+        // Verifica si el item es un objeto de la clase Marge
+        if (Marge* marge = dynamic_cast<Marge*>(item)) {
+            // Comprueba si hay colisión con el objeto actual
+            if (this->collidesWithItem(marge)) {
+                qDebug() << "Colisión detectada con Marge!";
+                // Aquí puedes añadir la lógica adicional en caso de colisión
+                recibirDanio(danoBase,multiplicadorDano);
+            }
+        }
+        else if (Telefono* telefono = dynamic_cast<Telefono*>(item)) {
+            if (this->collidesWithItem(telefono)) {
+                qDebug() << "¡Bart alcanzó el teléfono! ¡Victoria!";
+                // Detener el juego o mostrar un mensaje
+                emit victoria();
+            }
+        }
+    }
+}
+void Bart::keyReleaseEvent(QKeyEvent* event) {
+    // Solo reducimos la velocidad a cero si no hay ninguna tecla presionada
+    if (event->key() == Qt::Key_A || event->key() == Qt::Key_D) {
+        if (velocidadX != 0) velocidadX = 0; // Detener la velocidad horizontal
+    } else if (event->key() == Qt::Key_W || event->key() == Qt::Key_S) {
+        if (velocidadY != 0) velocidadY = 0; // Detener la velocidad vertical
+    }
+
+    QGraphicsItem::keyReleaseEvent(event); // Llamada al evento base
+}
+
+void Bart::aumentarDano() {
+    multiplicadorDano += 0.01f; // Incrementa el multiplicador de daño en un 10% cada 10 segundos
+    qDebug() << "Multiplicador de daño aumentado a: " << multiplicadorDano;
 }

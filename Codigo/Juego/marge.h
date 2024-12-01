@@ -7,7 +7,7 @@
 #include <QTimer>
 #include <qgraphicsitem.h>
 #include <QRandomGenerator>
-class Marge:public QObject,public QGraphicsPixmapItem {
+class Marge:public Enemigo {
     Q_OBJECT
 
 public:
@@ -16,9 +16,11 @@ public:
     int getVida() const;
 
 private slots:
-    void moveLeft();
+    //void moveLeft();
     void updateFrame();
 
+protected:
+    void mover() override; // Implementa el movimiento específico de Marge
 
 private:
     int currentFrame;

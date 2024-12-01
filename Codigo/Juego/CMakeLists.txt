@@ -40,6 +40,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         boomerang.h boomerang.cpp
         Boomerang.png
         telefono.h telefono.cpp
+        fondovictoria.jpg
+        FondoGameOver.jpg
 
 
 

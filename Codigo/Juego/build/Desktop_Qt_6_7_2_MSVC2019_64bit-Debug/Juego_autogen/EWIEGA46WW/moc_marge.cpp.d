@@ -1,5 +1,6 @@
 F:/Luis/Cursos/Ingeniería\ teleco/Tercer\ semes/Informatica\ 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/Juego_autogen/EWIEGA46WW/moc_marge.cpp: F:/Luis/Cursos/Ingeniería\ teleco/Tercer\ semes/Informatica\ 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/marge.h \
   F:/Luis/Cursos/Ingeniería\ teleco/Tercer\ semes/Informatica\ 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/enemigo.h \
+  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/QObject \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/QRandomGenerator \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/QTimer \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtCore/q20functional.h \
@@ -152,6 +153,7 @@ F:/Luis/Cursos/Ingeniería\ teleco/Tercer\ semes/Informatica\ 2/Teoria/Desafio_I
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qtransform.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qwindowdefs.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtGui/qwindowdefs_win.h \
+  F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/QGraphicsPixmapItem \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/QLabel \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/qframe.h \
   F:/instalaciones/QT_Creator/6.7.2/msvc2019_64/include/QtWidgets/qgraphicsitem.h \

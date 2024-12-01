@@ -75,13 +75,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 86,
+				"line" : 88,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 69,
+				"line" : 71,
 				"parent" : 0
 			},
 			{
@@ -375,18 +375,18 @@
 				23,
 				26,
 				29,
-				32
+				34
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "Juego_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "Juego_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "Juego_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "Juego::@6890427a1f51a3e7e1df",
@@ -500,7 +500,7 @@
 				23,
 				26,
 				29,
-				32
+				34
 			]
 		},
 		{
@@ -514,7 +514,7 @@
 				22,
 				25,
 				28,
-				30
+				32
 			]
 		},
 		{
@@ -525,7 +525,7 @@
 				5,
 				6,
 				10,
-				31
+				33
 			]
 		},
 		{
@@ -541,15 +541,17 @@
 				16,
 				17,
 				24,
-				27
+				27,
+				30,
+				31
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				33,
-				34
+				35,
+				36
 			]
 		}
 	],
@@ -714,6 +716,16 @@
 			"compileGroupIndex" : 0,
 			"path" : "telefono.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "fondovictoria.jpg",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"path" : "FondoGameOver.jpg",
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 0,
