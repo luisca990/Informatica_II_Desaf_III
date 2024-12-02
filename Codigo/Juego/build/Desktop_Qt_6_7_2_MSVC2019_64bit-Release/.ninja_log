@@ -1,0 +1,21 @@
+# ninja log v6
+4	235	7547969250880700	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/cmake.verify_globs	d9fb7f776d011add
+249	1019	7547969260219237	Juego_autogen/timestamp	3589a508202dca
+249	1019	7547969260219237	Juego_autogen/mocs_compilation.cpp	3589a508202dca
+249	1019	7547969260219237	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/Juego_autogen/timestamp	3589a508202dca
+249	1019	7547969260219237	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/Juego_autogen/mocs_compilation.cpp	3589a508202dca
+1023	1204	7547969262710466	Juego_autogen/EWIEGA46WW/qrc_sprites.cpp	e724bf877f8c632
+1023	1204	7547969262710466	F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/Juego_autogen/EWIEGA46WW/qrc_sprites.cpp	e724bf877f8c632
+1270	2658	7547969263536272	CMakeFiles/Juego.dir/gameexception.cpp.obj	63f5e36b7e6997a1
+1277	2685	7547969263601188	CMakeFiles/Juego.dir/archivo.cpp.obj	a75c710326885ec
+1283	2887	7547969263655820	CMakeFiles/Juego.dir/Juego_autogen/EWIEGA46WW/qrc_sprites.cpp.obj	edd5c9f9710a55e6
+1243	4466	7547969263260050	CMakeFiles/Juego.dir/enemigo.cpp.obj	2740427d2ccbc21a
+1264	4522	7547969263470913	CMakeFiles/Juego.dir/telefono.cpp.obj	bbb24393b3ab7ece
+1257	4526	7547969263405980	CMakeFiles/Juego.dir/boomerang.cpp.obj	a764d865f8657ab9
+1211	4567	7547969262950064	CMakeFiles/Juego.dir/main.cpp.obj	850a7a98a2f07598
+1251	5019	7547969263341432	CMakeFiles/Juego.dir/marge.cpp.obj	a2c37bd1a59c8e13
+1236	5199	7547969263193651	CMakeFiles/Juego.dir/personaje.cpp.obj	5aca3deeab4701c4
+1229	5417	7547969263121032	CMakeFiles/Juego.dir/Bart.cpp.obj	36af90df3fb9dd58
+1204	5481	7547969262880046	CMakeFiles/Juego.dir/Juego_autogen/mocs_compilation.cpp.obj	98104a3837d28be4
+1218	5559	7547969263006667	CMakeFiles/Juego.dir/mainwindow.cpp.obj	3e5647cfc11fab3
+5559	5836	7547969306417133	Juego.exe	9cef69f0b72d8090
