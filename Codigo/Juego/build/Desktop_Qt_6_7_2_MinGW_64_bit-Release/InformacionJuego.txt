@@ -1,1 +1,10 @@
 Vida: 0
+Vida: 0
+Vida: 0
+Vida: 0
+Vida: 0
+Vida: 0
+Vida: 10
+Cantidad de boomerangs lanzados: 8
+Vida: 71
+Cantidad de boomerangs lanzados: 10
