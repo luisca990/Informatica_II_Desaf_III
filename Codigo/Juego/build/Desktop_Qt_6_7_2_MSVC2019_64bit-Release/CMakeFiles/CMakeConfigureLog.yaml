@@ -63,8 +63,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-pzjtcl"
-      binary: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-pzjtcl"
+      source: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-asjav4"
+      binary: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-asjav4"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -74,11 +74,11 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-pzjtcl'
+        Change Dir: 'F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-asjav4'
         
-        Run Build Command(s): F:/instalaciones/QT_Creator/Tools/Ninja/ninja.exe -v cmTC_3167a
-        [1/2] C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_3167a.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_3167a.dir\\ /FS -c F:\\instalaciones\\QT_Creator\\Tools\\CMake_64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && F:\\instalaciones\\QT_Creator\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_3167a.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_3167a.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_3167a.exe /implib:cmTC_3167a.lib /pdb:cmTC_3167a.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): F:/instalaciones/QT_Creator/Tools/Ninja/ninja.exe -v cmTC_44161
+        [1/2] C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_44161.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_44161.dir\\ /FS -c F:\\instalaciones\\QT_Creator\\Tools\\CMake_64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && F:\\instalaciones\\QT_Creator\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_44161.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_44161.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_44161.exe /implib:cmTC_44161.lib /pdb:cmTC_44161.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -124,8 +124,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-lyzj2h"
-      binary: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-lyzj2h"
+      source: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-ttpb9j"
+      binary: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-ttpb9j"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -135,13 +135,13 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-lyzj2h'
+        Change Dir: 'F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-ttpb9j'
         
-        Run Build Command(s): F:/instalaciones/QT_Creator/Tools/Ninja/ninja.exe -v cmTC_e6cd3
-        [1/2] C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x64\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_e6cd3.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_e6cd3.dir\\ /FS -c "F:\\Luis\\Cursos\\Ingeniería teleco\\Tercer semes\\Informatica 2\\Teoria\\Desafio_III\\Informatica_II_Desaf_III\\Codigo\\Juego\\build\\Desktop_Qt_6_7_2_MSVC2019_64bit-Release\\CMakeFiles\\CMakeScratch\\TryCompile-lyzj2h\\src.cxx"
-        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_e6cd3.dir/src.cxx.obj 
-        C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x64\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_e6cd3.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_e6cd3.dir\\ /FS -c "F:\\Luis\\Cursos\\Ingeniería teleco\\Tercer semes\\Informatica 2\\Teoria\\Desafio_III\\Informatica_II_Desaf_III\\Codigo\\Juego\\build\\Desktop_Qt_6_7_2_MSVC2019_64bit-Release\\CMakeFiles\\CMakeScratch\\TryCompile-lyzj2h\\src.cxx"
-        F:\\Luis\\Cursos\\Ingeniería teleco\\Tercer semes\\Informatica 2\\Teoria\\Desafio_III\\Informatica_II_Desaf_III\\Codigo\\Juego\\build\\Desktop_Qt_6_7_2_MSVC2019_64bit-Release\\CMakeFiles\\CMakeScratch\\TryCompile-lyzj2h\\src.cxx(1): fatal error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory
+        Run Build Command(s): F:/instalaciones/QT_Creator/Tools/Ninja/ninja.exe -v cmTC_69d73
+        [1/2] C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x64\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_69d73.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_69d73.dir\\ /FS -c "F:\\Luis\\Cursos\\Ingeniería teleco\\Tercer semes\\Informatica 2\\Teoria\\Desafio_III\\Informatica_II_Desaf_III\\Codigo\\Juego\\build\\Desktop_Qt_6_7_2_MSVC2019_64bit-Release\\CMakeFiles\\CMakeScratch\\TryCompile-ttpb9j\\src.cxx"
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_69d73.dir/src.cxx.obj 
+        C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x64\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_69d73.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_69d73.dir\\ /FS -c "F:\\Luis\\Cursos\\Ingeniería teleco\\Tercer semes\\Informatica 2\\Teoria\\Desafio_III\\Informatica_II_Desaf_III\\Codigo\\Juego\\build\\Desktop_Qt_6_7_2_MSVC2019_64bit-Release\\CMakeFiles\\CMakeScratch\\TryCompile-ttpb9j\\src.cxx"
+        F:\\Luis\\Cursos\\Ingeniería teleco\\Tercer semes\\Informatica 2\\Teoria\\Desafio_III\\Informatica_II_Desaf_III\\Codigo\\Juego\\build\\Desktop_Qt_6_7_2_MSVC2019_64bit-Release\\CMakeFiles\\CMakeScratch\\TryCompile-ttpb9j\\src.cxx(1): fatal error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
@@ -159,8 +159,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-hd9gew"
-      binary: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-hd9gew"
+      source: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-79e0ij"
+      binary: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-79e0ij"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -170,14 +170,14 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-hd9gew'
+        Change Dir: 'F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-79e0ij'
         
-        Run Build Command(s): F:/instalaciones/QT_Creator/Tools/Ninja/ninja.exe -v cmTC_19d37
-        [1/2] C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /GR /EHsc -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_19d37.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_19d37.dir\\ /FS -c "F:\\Luis\\Cursos\\Ingeniería teleco\\Tercer semes\\Informatica 2\\Teoria\\Desafio_III\\Informatica_II_Desaf_III\\Codigo\\Juego\\build\\Desktop_Qt_6_7_2_MSVC2019_64bit-Release\\CMakeFiles\\CMakeScratch\\TryCompile-hd9gew\\CheckFunctionExists.cxx"
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && F:\\instalaciones\\QT_Creator\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_19d37.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_19d37.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_19d37.exe /implib:cmTC_19d37.lib /pdb:cmTC_19d37.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        \x1b[31mFAILED: \x1b[0mcmTC_19d37.exe 
-        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && F:\\instalaciones\\QT_Creator\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_19d37.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_19d37.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_19d37.exe /implib:cmTC_19d37.lib /pdb:cmTC_19d37.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_19d37.dir\\CheckFunctionExists.cxx.obj /out:cmTC_19d37.exe /implib:cmTC_19d37.lib /pdb:cmTC_19d37.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_19d37.dir/intermediate.manifest CMakeFiles\\cmTC_19d37.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s): F:/instalaciones/QT_Creator/Tools/Ninja/ninja.exe -v cmTC_12afd
+        [1/2] C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /GR /EHsc -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_12afd.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_12afd.dir\\ /FS -c "F:\\Luis\\Cursos\\Ingeniería teleco\\Tercer semes\\Informatica 2\\Teoria\\Desafio_III\\Informatica_II_Desaf_III\\Codigo\\Juego\\build\\Desktop_Qt_6_7_2_MSVC2019_64bit-Release\\CMakeFiles\\CMakeScratch\\TryCompile-79e0ij\\CheckFunctionExists.cxx"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && F:\\instalaciones\\QT_Creator\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_12afd.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_12afd.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_12afd.exe /implib:cmTC_12afd.lib /pdb:cmTC_12afd.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        \x1b[31mFAILED: \x1b[0mcmTC_12afd.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && F:\\instalaciones\\QT_Creator\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_12afd.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_12afd.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_12afd.exe /implib:cmTC_12afd.lib /pdb:cmTC_12afd.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_12afd.dir\\CheckFunctionExists.cxx.obj /out:cmTC_12afd.exe /implib:cmTC_12afd.lib /pdb:cmTC_12afd.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_12afd.dir/intermediate.manifest CMakeFiles\\cmTC_12afd.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib'\x0d
         ninja: build stopped: subcommand failed.
         
@@ -196,8 +196,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-84z6ej"
-      binary: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-84z6ej"
+      source: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-jjruhv"
+      binary: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-jjruhv"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -207,14 +207,14 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-84z6ej'
+        Change Dir: 'F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-jjruhv'
         
-        Run Build Command(s): F:/instalaciones/QT_Creator/Tools/Ninja/ninja.exe -v cmTC_5d0d9
-        [1/2] C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /GR /EHsc -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_5d0d9.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_5d0d9.dir\\ /FS -c "F:\\Luis\\Cursos\\Ingeniería teleco\\Tercer semes\\Informatica 2\\Teoria\\Desafio_III\\Informatica_II_Desaf_III\\Codigo\\Juego\\build\\Desktop_Qt_6_7_2_MSVC2019_64bit-Release\\CMakeFiles\\CMakeScratch\\TryCompile-84z6ej\\CheckFunctionExists.cxx"
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && F:\\instalaciones\\QT_Creator\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_5d0d9.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_5d0d9.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_5d0d9.exe /implib:cmTC_5d0d9.lib /pdb:cmTC_5d0d9.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        \x1b[31mFAILED: \x1b[0mcmTC_5d0d9.exe 
-        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && F:\\instalaciones\\QT_Creator\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_5d0d9.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_5d0d9.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_5d0d9.exe /implib:cmTC_5d0d9.lib /pdb:cmTC_5d0d9.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_5d0d9.dir\\CheckFunctionExists.cxx.obj /out:cmTC_5d0d9.exe /implib:cmTC_5d0d9.lib /pdb:cmTC_5d0d9.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_5d0d9.dir/intermediate.manifest CMakeFiles\\cmTC_5d0d9.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s): F:/instalaciones/QT_Creator/Tools/Ninja/ninja.exe -v cmTC_985a4
+        [1/2] C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /GR /EHsc -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_985a4.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_985a4.dir\\ /FS -c "F:\\Luis\\Cursos\\Ingeniería teleco\\Tercer semes\\Informatica 2\\Teoria\\Desafio_III\\Informatica_II_Desaf_III\\Codigo\\Juego\\build\\Desktop_Qt_6_7_2_MSVC2019_64bit-Release\\CMakeFiles\\CMakeScratch\\TryCompile-jjruhv\\CheckFunctionExists.cxx"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && F:\\instalaciones\\QT_Creator\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_985a4.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_985a4.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_985a4.exe /implib:cmTC_985a4.lib /pdb:cmTC_985a4.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        \x1b[31mFAILED: \x1b[0mcmTC_985a4.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && F:\\instalaciones\\QT_Creator\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_985a4.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_985a4.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_985a4.exe /implib:cmTC_985a4.lib /pdb:cmTC_985a4.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_985a4.dir\\CheckFunctionExists.cxx.obj /out:cmTC_985a4.exe /implib:cmTC_985a4.lib /pdb:cmTC_985a4.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_985a4.dir/intermediate.manifest CMakeFiles\\cmTC_985a4.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib'\x0d
         ninja: build stopped: subcommand failed.
         
@@ -238,8 +238,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-kvy910"
-      binary: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-kvy910"
+      source: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-k7rizb"
+      binary: "F:/Luis/Cursos/Ingenier\u00eda teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-k7rizb"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -249,11 +249,11 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: 'F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-kvy910'
+        Change Dir: 'F:/Luis/Cursos/Ingeniería teleco/Tercer semes/Informatica 2/Teoria/Desafio_III/Informatica_II_Desaf_III/Codigo/Juego/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Release/CMakeFiles/CMakeScratch/TryCompile-k7rizb'
         
-        Run Build Command(s): F:/instalaciones/QT_Creator/Tools/Ninja/ninja.exe -v cmTC_1244a
-        [1/2] C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x64\\cl.exe  /nologo /TP -DHAVE_STDATOMIC  /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_1244a.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_1244a.dir\\ /FS -c "F:\\Luis\\Cursos\\Ingeniería teleco\\Tercer semes\\Informatica 2\\Teoria\\Desafio_III\\Informatica_II_Desaf_III\\Codigo\\Juego\\build\\Desktop_Qt_6_7_2_MSVC2019_64bit-Release\\CMakeFiles\\CMakeScratch\\TryCompile-kvy910\\src.cxx"
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && F:\\instalaciones\\QT_Creator\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_1244a.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_1244a.dir\\src.cxx.obj  /out:cmTC_1244a.exe /implib:cmTC_1244a.lib /pdb:cmTC_1244a.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): F:/instalaciones/QT_Creator/Tools/Ninja/ninja.exe -v cmTC_20227
+        [1/2] C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\HostX64\\x64\\cl.exe  /nologo /TP -DHAVE_STDATOMIC  /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_20227.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_20227.dir\\ /FS -c "F:\\Luis\\Cursos\\Ingeniería teleco\\Tercer semes\\Informatica 2\\Teoria\\Desafio_III\\Informatica_II_Desaf_III\\Codigo\\Juego\\build\\Desktop_Qt_6_7_2_MSVC2019_64bit-Release\\CMakeFiles\\CMakeScratch\\TryCompile-k7rizb\\src.cxx"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && F:\\instalaciones\\QT_Creator\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_20227.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100162~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MIB055~1\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_20227.dir\\src.cxx.obj  /out:cmTC_20227.exe /implib:cmTC_20227.lib /pdb:cmTC_20227.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
 ...
